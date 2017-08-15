@@ -2,7 +2,7 @@ const Koa = require('koa');
 const {RippleAPI} = require('ripple-lib');
 
 const lastLedgerSpan = process.env.RIPPLED_LAST_LEDGER_SPAN || 1;
-const url = process.env.RIPPLED_URL || "ws://localhost:5672";
+const url = process.env.RIPPLED_URL || "ws://localhost:5006";
 const app = new Koa();
 
 const api = new RippleAPI({server: url});
