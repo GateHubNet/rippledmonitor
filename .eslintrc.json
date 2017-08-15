@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "xo/esnext",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "flowtype",
+    "mocha"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "mocha/no-exclusive-tests": "error",
+    "no-warning-comments": "off",
+    "no-var": "off"
+  }
+}
